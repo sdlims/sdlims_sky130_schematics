@@ -32,11 +32,11 @@ N -420 -170 -320 -170 {lab=#net2}
 N -420 -250 -320 -250 {lab=#net1}
 N -420 -250 -420 -240 {lab=#net1}
 N -370 -260 -370 -250 {lab=#net1}
-N -670 -170 -650 -170 {lab=#net3}
-N -650 -200 -650 -170 {lab=#net3}
-N -650 -200 -640 -200 {lab=#net3}
-N -650 -170 -650 -140 {lab=#net3}
-N -650 -140 -640 -140 {lab=#net3}
+N -670 -170 -650 -170 {lab=C_N}
+N -650 -200 -650 -170 {lab=C_N}
+N -650 -200 -640 -200 {lab=C_N}
+N -650 -170 -650 -140 {lab=C_N}
+N -650 -140 -640 -140 {lab=C_N}
 N -600 -170 -560 -170 {lab=C}
 N -600 -110 -600 -80 {lab=VGND}
 N -600 -260 -600 -230 {lab=VPWR}
@@ -47,7 +47,6 @@ N -620 -60 -620 -50 {lab=Y}
 N -120 -60 -120 -50 {lab=Y}
 N -420 -60 -420 -50 {lab=Y}
 N -520 -60 -520 -50 {lab=Y}
-N -370 -70 -80 -70 {lab=Y}
 N -370 -70 -370 -60 {lab=Y}
 N -620 -60 -120 -60 {lab=Y}
 N -620 20 -120 20 {lab=VGND}
@@ -55,24 +54,25 @@ N -320 10 -320 20 {lab=VGND}
 N -220 10 -220 20 {lab=VGND}
 N -220 -60 -220 -50 {lab=Y}
 N -320 -60 -320 -50 {lab=Y}
+N -370 -70 -310 -70 {lab=Y}
 C {sky130_fd_pr/pfet_01v8_hvt.sym} -300 -300 0 1 {name=M1
 W=1000000u
 L=150000u
 model=pfet_01v8_hvt
 spiceprefix=X
 }
-C {ipin.sym} -730 -260 0 0 {name=p1 lab=A}
-C {ipin.sym} -730 -240 0 0 {name=p18 lab=B}
+C {ipin.sym} -720 -320 0 0 {name=p1 lab=A}
+C {ipin.sym} -720 -300 0 0 {name=p18 lab=B}
 C {ipin.sym} -670 -170 0 0 {name=p14 lab=C_N}
-C {ipin.sym} -730 -220 0 0 {name=p19 lab=VGND}
-C {ipin.sym} -730 -200 0 0 {name=p20 lab=VNB}
-C {ipin.sym} -730 -180 0 0 {name=p21 lab=VPB}
-C {ipin.sym} -730 -160 0 0 {name=p22 lab=VPWR}
-C {opin.sym} -680 -260 0 0 {name=p2 lab=Y}
+C {ipin.sym} -720 -280 0 0 {name=p19 lab=VGND}
+C {ipin.sym} -720 -260 0 0 {name=p20 lab=VNB}
+C {ipin.sym} -720 -240 0 0 {name=p21 lab=VPB}
+C {ipin.sym} -720 -220 0 0 {name=p22 lab=VPWR}
+C {opin.sym} -680 -320 0 0 {name=p2 lab=Y}
 C {lab_pin.sym} -320 -300 2 1 {name=p3 sig_type=std_logic lab=VPB}
 C {lab_pin.sym} -370 -350 2 0 {name=p13 sig_type=std_logic lab=VPWR}
 C {lab_pin.sym} -370 40 2 0 {name=p16 sig_type=std_logic lab=VGND}
-C {lab_pin.sym} -80 -70 2 0 {name=p17 sig_type=std_logic lab=Y
+C {lab_pin.sym} -310 -70 2 0 {name=p17 sig_type=std_logic lab=Y
 }
 C {lab_pin.sym} -120 -20 0 0 {name=p5 sig_type=std_logic lab=VNB}
 C {sky130_fd_pr/pfet_01v8_hvt.sym} -440 -300 0 0 {name=M7
