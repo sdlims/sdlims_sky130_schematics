@@ -6,10 +6,8 @@ V {}
 S {}
 E {}
 N -200 10 -200 30 {lab=VGND}
-N -190 -20 -180 -20 {lab=#net1}
 N -250 10 -200 10 {lab=VGND}
 N -200 -70 -80 -70 {lab=Y}
-N -90 -20 -80 -20 {lab=#net2}
 N -150 10 -100 10 {lab=VGND}
 N -200 10 -150 10 {lab=VGND}
 N -200 -50 -100 -50 {lab=Y}
@@ -41,14 +39,14 @@ L=150000u
 model=nfet_01v8
 spiceprefix=X
 }
-C {ipin.sym} -340 -160 0 0 {name=p1 lab=A}
-C {ipin.sym} -340 -140 0 0 {name=p18 lab=B}
-C {ipin.sym} -340 -120 0 0 {name=p14 lab=C}
-C {ipin.sym} -340 -100 0 0 {name=p19 lab=VGND}
-C {ipin.sym} -340 -80 0 0 {name=p20 lab=VNB}
-C {ipin.sym} -340 -60 0 0 {name=p21 lab=VPB}
-C {ipin.sym} -340 -40 0 0 {name=p22 lab=VPWR}
-C {opin.sym} -270 -160 0 0 {name=p2 lab=Y}
+C {ipin.sym} -340 -220 0 0 {name=p1 lab=A}
+C {ipin.sym} -340 -200 0 0 {name=p18 lab=B}
+C {ipin.sym} -340 -180 0 0 {name=p14 lab=C}
+C {ipin.sym} -340 -160 0 0 {name=p19 lab=VGND}
+C {ipin.sym} -340 -140 0 0 {name=p20 lab=VNB}
+C {ipin.sym} -340 -120 0 0 {name=p21 lab=VPB}
+C {ipin.sym} -340 -100 0 0 {name=p22 lab=VPWR}
+C {opin.sym} -300 -220 0 0 {name=p2 lab=Y}
 C {lab_pin.sym} -200 -240 2 0 {name=p3 sig_type=std_logic lab=VPB}
 C {lab_pin.sym} -200 -180 2 0 {name=p4 sig_type=std_logic lab=VPB}
 C {lab_pin.sym} -300 -20 2 0 {name=p6 sig_type=std_logic lab=VNB}
